@@ -1,8 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&display=swap');
 *{
-	font-family: cursive;
+	font-family: "Comic Relief", system-ui;
 	font-weight: lighter;
 	margin: 0;
 	padding: 0;
@@ -104,6 +102,7 @@ input{
 
 a{
 	color: #6cd9ff;
+
 }
 
 

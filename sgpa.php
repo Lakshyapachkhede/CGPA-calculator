@@ -134,7 +134,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			?>
 
 		</div>
-			<p>Tip: consider theory and practical exams seprately</p>
+			<p>Tip: consider theory and practical exams seprately <br>
+			<a href="help.php">help</a>
+			</p>
 
 		<button class="round-btn" id="addSubject" type="button"><img src="plus.png" alt="add" width="20px"></button>
 

@@ -16,23 +16,24 @@
 		<h1 class="font-1">Calculate your <a href="cgpa.php">CGPA</a> and <a href="sgpa.php">SGPA</a></h1>
 
 		<p>
-			Easily calculate your CGPA and SGPA. This site features both CGPA and SGPA calculators. You can calculate your SGPA easily using your subject marks and credit points.
+			Easily calculate your CGPA and SGPA. This site features both CGPA and SGPA calculators. You can calculate your SGPA easily using your subject marks and credit points. 
 		</p>
+
 
 		<h1 class="font-1 mt30">What is CGPA?</h1>
 		<h2>
 			<code>CGPA = (Σ SGPA) ÷ Total Semesters</code>
 		</h2>
 		<p>
-			CGPA is calculated by taking the average of all semester SGPAs.
+			CGPA is calculated by taking the average of all semester SGPAs. <a href="cgpa.php">calculate &rarr;</a>
 		</p>
 
-		<h1 class="font-1 mt30">What is SGPA?</h1>
+		<h1 class="font-1 mt30" id="sgpa">What is SGPA?</h1>
 		<h2>
 			<code>SGPA = (Σ Grade Points × Credits) ÷ Σ Credits</code>
 		</h2>
 		<p>
-			SGPA is calculated by multiplying the grade point of each subject by the credits of that subject and dividing the sum by the total number of credits in that semester.
+			SGPA is calculated by multiplying the grade point of each subject by the credits of that subject and dividing the sum by the total number of credits in that semester. <a href="sgpa.php">calculate &rarr;</a>
 		</p>
 		<br>
 		<h3 class="mt30">Grade Points:</h3>
@@ -46,6 +47,10 @@
 
 		<img src="syllabus.png" width="100%" alt="Syllabus Structure">
 	</div>
+
+	<nav>
+		<a href="https://lakshyapachkhede.github.io/Lakshyapachkhede/" class="nav-link" target="_blank"><p class="title">Lakshya Pachkhede - 2025</p></a>
+	</nav>
 
 </body>
 </html>
