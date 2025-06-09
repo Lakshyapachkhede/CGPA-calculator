@@ -2,6 +2,11 @@
 
 $subjects = [];
 
+function ceil2($value) {
+    return ceil($value * 100) / 100;
+}
+
+
 function getGradePoints($percentage)
 {
     if ($percentage > 90) return 10;  // A+
@@ -46,11 +51,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
 	}
-	if ($credits == 0){
-
-	} else{
-		
-	$cgpa = $totalGradePoints / $totalCredits;
+	if ($totalCredits != 0){
+		$cgpa = ceil2($totalGradePoints / $totalCredits);
 	}
 
 
@@ -100,29 +102,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 				$credits = $subject["credits"];
 
 				echo "
-						<div class='input-con'>
+				<div class='input-con'>
 				<h2>Subject #" .  ($index  + 1) ."</h2>
 
 				<div class='row'>
 
-					<div>
-						<p class='t-light'>marks</p>
-						<input type='number'  placeholder='0.00' min='0' name='subjects[$index][marks]' required value='$marks'>
-					</div>
+				<div>
+				<p class='t-light'>marks</p>
+				<input type='number'  placeholder='0.00' min='0' name='subjects[$index][marks]' required value='$marks'>
+				</div>
 
-					<div>
-						<p class='t-light'>total</p>
-						<input type='number'  placeholder='0.00' min='0' name='subjects[$index][total]' required value='$total'> 
-					</div>
+				<div>
+				<p class='t-light'>total</p>
+				<input type='number'  placeholder='0.00' min='0' name='subjects[$index][total]' required value='$total'> 
+				</div>
 
-					<div>
-						<p class='t-light'>credits</p>
-						<input type='number'  placeholder='0.00' min='0' name='subjects[$index][credits]' required value='$credits'>
-					</div>
+				<div>
+				<p class='t-light'>credits</p>
+				<input type='number'  placeholder='0.00' min='0' name='subjects[$index][credits]' required value='$credits'>
+				</div>
 
 				</div>
 
-		</div>";
+				</div>";
 
 
 			}
@@ -131,15 +133,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 			?>
 
-	 
-
-
-
-
-
-
-
 		</div>
+			<p>Tip: consider theory and practical exams seprately</p>
+
 		<button class="round-btn" id="addSubject" type="button"><img src="plus.png" alt="add" width="20px"></button>
 
 
