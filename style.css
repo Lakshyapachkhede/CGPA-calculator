@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&display=swap');
+
+*{
+	font-family: cursive;
+	font-weight: lighter;
+	margin: 0;
+	padding: 0;
+}
+
+.title{
+	font-family: "Pacifico", cursive;
+	font-size: 20px;
+}
+
+body{
+	background-color: rgb(250, 250, 255);
+}
+
+.font-1{
+	font-family: "Edu NSW ACT Cursive";
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:  #E0F7FA;
+	padding: 10px;
+}
+.nav-link{
+	color: black;
+	text-decoration: none;
+}
+.container{
+	max-width: 800px;
+	margin: 50px auto;
+}
+
+input{
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	background: #E0F7FA;
+	padding: 10px 20px;
+	border: 1px solid grey;
+
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.input-con{
+	margin-top: 50px;
+}
+.input-con h2{
+	margin: 10px auto;
+}
+
+.submit-btn{
+	border: 0;
+	outline: 0;
+	background:#E0F7FA ;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+
+.round-btn{
+	border: 0;
+	outline: 0;
+	background:#E0F7FA ;
+	border: 1px solid grey;
+	border-radius: 50%;
+	padding:  10px;
+	margin-top: 20px;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background 0.5s;
+	float: right;
+}
+
+.round-btn:hover{
+	background:#6cd9ff ;
+
+
+}
+
+.result-con{
+	border-radius: 5px;
+	background: #E0F7FA;
+	padding: 10px 20px;
+	border: 1px solid grey;
+	margin-top: 30px;
+}
+
+
+a{
+	color: #6cd9ff;
+}
+
+
+
+.mt30{
+	margin-top: 30px !important;
+}
+
+@media only screen and (max-width: 800px) {
+	.row{
+		flex-direction: column;
+	}
+	#container{
+		padding: 10px;
+
+	}
+
+	.row  div{
+		width : 100%;
+		margin: 10px auto;
+
+	}
+
+	.row div input{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	form{
+		padding: 10px;
+	}
+
+	.container{
+		margin: 20px 0;
+	}
+
+}
